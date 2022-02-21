@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  fpm:
+    image: akeneo/pim-php-dev:4.0
+    environment:
+      COMPOSER_HOME: /home/docker/.composer
+    user: www-data
+    volumes:
+      - ./:/srv/custom_entity
+      - ~/.composer:/home/docker/.composer
+    working_dir: /srv/custom_entity
+    networks:
+      - akeneo-ceb
+
+networks:
+  akeneo-ceb:

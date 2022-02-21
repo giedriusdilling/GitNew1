@@ -1,0 +1,20 @@
+parameters:
+    pim_ui.controller.ajax_option.class:     Pim\Bundle\CustomEntityBundle\Controller\AjaxOptionController
+    pimee_product_asset.controller.ajax_option.class:   Pim\Bundle\CustomEntityBundle\Controller\EnterpriseAjaxOptionController
+    pim_custom_entity.rest_controller.class: Pim\Bundle\CustomEntityBundle\Controller\RestController
+
+services:
+    pim_custom_entity.controller:
+        public: true
+        class: '%pim_custom_entity.controller.class%'
+        arguments:
+            - '@pim_custom_entity.action.factory'
+            - '@request_stack'
+        tags:
+            - { name: controller.service_arguments }
+
+    pim_custom_entity.rest_controller:
+        public: true
+        class: '%pim_custom_entity.rest_controller.class%'
+        arguments:
+            - '@pim_custom_entity.configuration.registry'

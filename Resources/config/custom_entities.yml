@@ -1,0 +1,24 @@
+custom_entities:
+    default:
+        class: '%pim_custom_entity.configuration.default.class%'
+        extends: ~
+        abstract: true
+        actions:
+            rest_get:
+                service: pim_custom_entity.action.rest.get
+                enabled: true
+            rest_getall:
+                service: pim_custom_entity.action.rest.getall
+                enabled: true
+            rest_delete:
+                service: pim_custom_entity.action.rest.delete
+                enabled: true
+            rest_create:
+                service: pim_custom_entity.action.rest.create
+                enabled: true
+            rest_update:
+                service: pim_custom_entity.action.rest.update
+                enabled: true
+            quick_export:
+                service: pim_custom_entity.action.quick_export
+                enabled: true

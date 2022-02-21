@@ -1,0 +1,55 @@
+pim_menu:
+    tab.reference_data: Reference data
+    item.reference_data: Reference data
+    navigation.reference_data: Reference data
+
+pim_custom_entity:
+    index_title: Overview
+    create_popin.title: Create
+    form:
+        field.label.code: Code
+        tab:
+            history.title: History
+            properties:
+                title: Properties
+                section:
+                    common: Common
+                    label_translations: Labels
+    button:
+        create: Create
+    message:
+        created: Successfully created new reference data
+        removed: Successfully removed reference data
+    error:
+        removing: The reference data could not be deleted
+    export.csv.entity_name:
+        label: Reference data name
+        help: The reference data name you want to import
+        no_reference_data: No reference data availables
+    import.csv.entity_name:
+        label: Reference data name
+        help: The reference data name you want to import
+        no_reference_data: No reference data availables
+
+pim_enrich:
+    form.attribute.tab.properties.label:
+        name: Name
+
+page_title:
+    pim_customentity_index: 'Reference data - Overview'
+    pim_customentity_rest_create: 'Reference data - Create'
+    pim_customentity_massedit: 'Reference data'
+    pim_customentity_quickexport: 'Reference data'
+    pim_customentity_rest_delete: 'Reference data'
+    pim_customentity_rest_list: 'Reference data'
+    pim_customentity_rest_get: 'Reference data | Edit'
+
+batch_jobs:
+    csv_reference_data_import:
+        label: Reference data import in CSV
+
+    csv_reference_data_export:
+        label: Reference data export in CSV
+
+    csv_reference_data_quick_export:
+        label: Reference data CSV quick export

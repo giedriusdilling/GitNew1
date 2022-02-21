@@ -1,0 +1,32 @@
+Properties: Properties
+# tabs and accordions
+pane.accordion:
+    general_properties: General properties
+
+pim_custom_entity:
+    export:
+        limit_exceeded: Please select less than %limit% records
+        csv.entity_name:
+            label: Reference data name
+            help: The reference data name you want to import
+    import.csv.entity_name:
+        label: Reference data name
+        help: The reference data name you want to import
+    acl_group.reference_data: Reference data
+
+properties:
+    title: Properties
+
+batch_jobs:
+    csv_reference_data_import:
+        validation.label: Validation
+        import.label: Import reference data
+        label: Reference data import in CSV
+
+    csv_reference_data_export:
+        export.label: Export reference data
+        label: Reference data export in CSV
+
+    csv_reference_data_quick_export:
+        quick_export.label: Reference data CSV quick export
+        label: Reference data CSV quick export

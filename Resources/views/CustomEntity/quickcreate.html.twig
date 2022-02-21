@@ -1,0 +1,24 @@
+{% spaceless %}
+    {% if elements is not defined %}
+        {% import 'PimUIBundle:Default:page_elements.html.twig' as elements %}
+    {% endif %}
+{% endspaceless %}
+
+{{ form_start(form, {
+    'action': formAction,
+    'class': 'form-inline',
+    'attr': {
+        'data-title': (customEntityName ~ '.create')|trans,
+        'data-button-submit': 'Create'|trans,
+        'data-button-cancel': 'Cancel'|trans
+    }
+}) }}
+
+    {{ JSFV(form) }}
+
+    {{ elements.form_errors(form) }}
+
+    <div class="row-fluid">
+        {{ form_row(form.code) }}
+    </div>
+{{ form_end(form) }}
